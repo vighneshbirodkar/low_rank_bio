@@ -9,6 +9,7 @@ from matplotlib import pyplot as plt
 
 M = np.loadtxt('expression_SC_superfinal.tsv', skiprows=1,
                usecols=range(1, 2578))
+print('Loaded Data with shape = %s' % str(M.shape))
 L, S, _, _ = mypcp(M)
 
 error = 100*(norm(M - L, 'fro')/norm(M, 'fro'))
