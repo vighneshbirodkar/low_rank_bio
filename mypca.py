@@ -1,7 +1,6 @@
 import numpy as np
 from numpy.linalg import norm, matrix_rank
 from scipy.linalg import svd, diagsvd
-from fbpca import pca
 from sklearn.utils.extmath import randomized_svd
 
 
