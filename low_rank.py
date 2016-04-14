@@ -19,6 +19,7 @@ plt.semilogy(s_l,
              label='Singular Values of Low rank component (rank=%d)' % rank_l)
 plt.legend()
 plt.grid(True)
-print('Percentage Error = %f', 100*norm(M - L, 'fro')/norm(M))
+print('Percentage Error = %f' % (100*norm(M - L, 'fro')/norm(M)))
 
+print(M.shape)
 plt.show()
