@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from mypca import mypcp
 
 
-M = np.loadtxt('homo_sapiens.csv', delimiter=',')
+M = np.loadtxt('homo_sapiens.csv', delimiter=',')[:, 0:5:7:8:9:11:12]
 L, S, _, _ = mypcp(M)
 
 s_data = np.linalg.svd(M, compute_uv=False)
